@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   # your code here
   attr_accessor :sender, :receiver, :amount, :status, :valid
@@ -12,6 +13,7 @@ class Transfer
   def valid?
     sender = BankAccount.new(@sender)
     receiver = BankAccount.new(@receiver)
+    binding.pry
     if sender.valid? && receiver.valid?
       @valid = true
       return true
