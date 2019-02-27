@@ -12,4 +12,5 @@ class Transfer
   def valid?
     return true if BankAccount.new(@sender).valid? && BankAccount.new(@receiver).valid?
     return false
+  end
 end
