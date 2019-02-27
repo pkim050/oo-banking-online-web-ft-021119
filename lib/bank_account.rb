@@ -20,4 +20,8 @@ class BankAccount
     return true if @balance > 0 && @status == "open"
     return false
   end
+  
+  def close_account
+    @status = "closed"
+  end
 end
