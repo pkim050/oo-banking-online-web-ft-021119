@@ -14,4 +14,6 @@ class Transfer
     return true if @sender.valid? && @receiver.valid?
     return false
   end
+  
+  def execute_transaction
 end
