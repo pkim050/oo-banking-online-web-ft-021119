@@ -11,9 +11,9 @@ class Transfer
   end
   
   def valid?
-    sender = BankAccount.new(@sender)
-    receiver = BankAccount.new(@receiver)
-    binding.pry
+    #sender = BankAccount.new(@sender)
+    #receiver = BankAccount.new(@receiver)
+    #binding.pry
     return true if BankAccount.new(@sender).valid? && BankAccount.new(@receiver).valid?
     return false
   end
